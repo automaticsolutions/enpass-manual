@@ -1,0 +1,49 @@
+:root {
+  font-family: Monserat, sans-serif;
+}
+
+@font-face {
+  font-family: 'Monserat';
+  src: url('./static/fonts/Montserrat-Regular.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Monserat';
+  src: url('./static/fonts/Montserrat-SemiBold.ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+html,
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #a4abb6;
+  padding: 0 1rem;
+}
+
+main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: auto 1fr;
+}
+
+main nav {
+  height: min-content;
+  margin: 1rem 0;
+}
+
+main section {
+  border-top: 1rem solid transparent;
+  grid-column: 2 / 3;
+}
+
+main section:last-child {
+  margin-bottom: 3rem;
+}
